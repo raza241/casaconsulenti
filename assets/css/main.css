@@ -1,0 +1,269 @@
+/**
+ * =================================================================== 
+ *  Author: Ubiquify Digtal
+ *  Made By: MUHAMMAD Raza
+ *
+ * =================================================================== 
+ */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/**
+ * =================================================================== 
+ *
+ *  colors
+ *
+ * =================================================================== 
+ */
+/**
+ * =================================================================== 
+ *
+ *  font: Gotham
+ *
+ * =================================================================== 
+ */
+@font-face {
+  font-family: gothamlight;
+  src: url(../fonts/GothamLight.ttf);
+}
+
+@font-face {
+  font-family: gothammedium;
+  src: url(../fonts/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: gothambold;
+  src: url(../fonts/GothamBold.ttf);
+}
+
+/**
+ * =================================================================== 
+ *
+ *  Reset Css
+ *
+ * =================================================================== 
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+.image-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.h__100 {
+  height: 100vh;
+}
+
+.padding__150 {
+  padding: 150px 0;
+}
+
+.title {
+  font-size: 36px;
+  font-family: gothambold;
+  text-transform: capitalize;
+  border-bottom: 10px solid #ed7b23;
+  padding: 0 0 10px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.title__light {
+  color: #fff;
+}
+
+.title__dark {
+  color: #13345d;
+}
+
+.discription {
+  font-size: 14px;
+  font-family: gothamlight;
+  color: #b8bdd0;
+  margin: 60px 0;
+}
+
+.lighter {
+  color: #fff;
+  border: 2px solid #fff !important;
+}
+
+.dark {
+  color: #13345d;
+  border: 2px solid #13345d;
+}
+
+.dark:hover {
+  color: #13345d !important;
+}
+
+.read__more {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: gothammedium;
+  font-size: 12px;
+}
+
+/**
+ * =================================================================== 
+ *
+ *  NavBar
+ *
+ * =================================================================== 
+ */
+header .navbar {
+  padding: 20px 60px;
+}
+
+header .header__logo {
+  max-width: 180px;
+}
+
+header .nav-link {
+  color: #fff;
+  font-family: gothamlight;
+  text-transform: capitalize;
+  font-size: 16px;
+  position: relative;
+}
+
+header .nav-link:hover:after {
+  position: absolute;
+  content: "";
+  bottom: 12px;
+  left: 0;
+  background: #ed7b23;
+  width: 100%;
+  height: 6px;
+  z-index: -10;
+}
+
+/**
+ * =================================================================== 
+ *
+ *  banner
+ *
+ * =================================================================== 
+ */
+#banner {
+  height: 100vh;
+}
+
+#banner .carousel-inner {
+  height: 100vh;
+}
+
+#banner .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .slide__discription {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+#banner .slide__discription h1 {
+  font-size: 60px;
+  font-family: gothambold;
+  text-transform: capitalize;
+  margin: 0 0 15px;
+}
+
+#banner .slide__discription p {
+  font-size: 18px;
+  font-family: gothamlight;
+}
+
+#banner .slide__discription .slider__button {
+  padding: 20px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: gothamlight;
+}
+
+/**
+ * =================================================================== 
+ *
+ *  About us
+ *
+ * =================================================================== 
+ */
+#about {
+  padding: 0 150px;
+}
+
+/**
+ * =================================================================== 
+ *
+ *  services
+ *
+ * =================================================================== 
+ */
+#services {
+  background: #1a1a1a;
+  position: relative;
+}
+
+#services .services__description {
+  position: absolute;
+  left: 25%;
+}
+
+#services .services__description .discription {
+  color: #fff;
+  margin: 30px 0;
+}
+
+#services .services__description ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+#services .services__description li {
+  color: #fff;
+  font-family: gothambold;
+}
+/*# sourceMappingURL=main.css.map */
