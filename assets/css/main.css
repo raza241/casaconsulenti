@@ -250,6 +250,7 @@ header .nav-link:hover:after {
 #services .services__description {
   position: absolute;
   left: 25%;
+  padding-right: 50px;
 }
 
 #services .services__description .discription {
@@ -265,5 +266,112 @@ header .nav-link:hover:after {
 #services .services__description li {
   color: #fff;
   font-family: gothambold;
+}
+
+#services .services__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#services .services__image::after {
+  position: absolute;
+  left: 10%;
+  bottom: -10%;
+  content: "";
+  background: url(../images/after-img.png);
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  z-index: -1;
+}
+
+#services .services__icon {
+  position: absolute;
+  left: -6%;
+}
+
+#services .services__icon li {
+  background: #ed7b23;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  border-radius: 50%;
+  margin: 0 0 15px;
+}
+
+#projects {
+  background: #fff;
+  position: relative;
+}
+
+#projects::after {
+  position: absolute;
+  background: url(../images/project-after-img.png);
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100px;
+  height: 100px;
+}
+
+#projects .container__2 {
+  position: relative;
+  text-transform: capitalize;
+}
+
+#projects .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#projects .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: rgba(237, 123, 35, 0.7);
+}
+
+#projects .container__2:hover .overlay {
+  opacity: 1;
+}
+
+#projects .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 25px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#projects .text h1 {
+  font-size: 20px;
+  font-family: gothambold;
+}
+
+#projects .text p {
+  font-size: 18px;
+  font-family: gothamlight;
 }
 /*# sourceMappingURL=main.css.map */
